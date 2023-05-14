@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>ShopéMon</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+   <div class="flex top">
+      
+
+      <a href="#"><img src="https://i.ibb.co/tptckNK/Faqs.png" alt="logo devourpuff"></a>
+
+      <nav class="navbar">
+         <a href="#">Home</a>
+         <a href="#about">About</a>
+         <a href="#items">Items</a>
+         <a href="#order">Order</a>
+      </nav>
+
+   </div>
+
+</header>
+
+<!-- header section ends -->
+
+<br><br><br><br><br>
+<br><br>
+
+<!-- menu section starts  -->
+
+<section class="order" id="items">
+
+   <h1 class="heading">GOTTA CATCH 'EM ALL!</h1>
+
+   <form action="http://sirjm.infinityfreeapp.com/checkout.php" onsubmit="formSubmit()">
+      <div class="form_wrap">
+
+         <div class="display-orders">
+            <div class="items-header">
+               <img src="https://lh3.googleusercontent.com/nEqV6J9QDS9qbWFdYXRc-Rm2V15chlLbBuosAFu0PXp5LoOlNLcNp1JUtceqCahG9i7yHy22ft-3vARzCnRObJzFBPVDtJd2yobHIC9SQlYAFgw-QnsgrMkxm6jH1Rj_5ujvlVLcnA=w2400" alt="mens apparel">
+            </div>
+
+            <div class="row">
+               <div class="card one">
+                  <div class="image">
+                     <br>
+                     <img id="food1"
+                           src="https://i.ibb.co/W2NtCnP/Untitled-design.png"
+                           alt="ItalianCarbonara">
+                  </div>
+                  <div class="title">
+                     <h1>Italian Carbonara</h1>
+                     <h1><small>₱320.00</small></h1>
+                  </div>
+                  <div class="description">
+                     <button id="food1num" type="button" class="amountbtn">0</button>
+                     <br>
+                     <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order" onclick="add(1)">
+                     <input type="button" value="Go Back!" class="itembtn" name="unorder" onclick="subtract(1)">
+                     <p></p>
+                  </div>
+               </div>
+
+               <div class="card two">
+                  <div class="image">
+                     <br>
+                     <img id="food2"
+                           src="https://i.ibb.co/VY3XS7Y/Untitled-design-1.png"
+                           alt="SpaghettiBolognese">
+                  </div>
+                  <div class="title">
+                     <h1>Spaghetti Bolognese</h1>
+                     <h1><small>₱370.00</small></h1>
+                  </div>
+                  <div class="description">
+                     <button id="food2num" type="button" class="amountbtn">0</button>
+                     <br>
+                     <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order" onclick="add(2)">
+                     <input type="button" value="Go Back!" class="itembtn" name="unorder" onclick="subtract(2)">
+                     <p></p>
+                  </div>
+               </div>
+
+               <div class="card three">
+                  <div class="image">
+                     <br>
+                     <img id="food3"
+                           src="https://i.ibb.co/VQFDZ78/Untitled-design-4.png"
+                           alt="ChickenRavioli">
+                  </div>
+                  <div class="title">
+                     <h1>Chicken Ravioli</h1>
+                     <h1><small>₱370.00</small></h1>
+                  </div>
+                  <div class="description">
+                     <button id="food3num" type="button" class="amountbtn">0</button>
+                     <br>
+                     <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order" onclick="add(3)">
+                     <input type="button" value="Go Back!" class="itembtn" name="unorder" onclick="subtract(3)">
+                     <p></p>
+                  </div>
+               </div>
+
+               <br><br><br><br>
+
+               <div class="card four">
+                  <div class="image">
+                     <br>
+                     <img id="food4"
+                           src="https://i.ibb.co/1nBB4zD/Untitled-design-2.png"
+                           alt="Lasagna">
+                  </div>
+                  <div class="title">
+                     <h1>Lasagna</h1>
+                     <h1><small>₱350.00</small></h1>
+                  </div>
+                  <div class="description">
+                     <button id="food4num" type="button" class="amountbtn">0</button>
+                     <br>
+                     <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order" onclick="add(4)">
+                     <input type="button" value="Go Back!" class="itembtn" name="unorder" onclick="subtract(4)">
+                     <p></p>
+                  </div>
+               </div>
+
+               <div class="card five">
+                  <div class="image">
+                     <br>
+                     <img id="food5"
+                           src="https://i.ibb.co/M8L5vyg/Untitled-design-3.png"
+                           alt="BeefStroganoff">
+                  </div>
+                  <div class="title">
+                     <h1>Beef Stroganoff</h1>
+                     <h1><small>₱400.00</small></h1>
+                  </div>
+                  <div class="description">
+                     <button id="food5num" type="button" class="amountbtn">0</button>
+                     <br>
+                     <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order" onclick="add(5)">
+                     <input type="button" value="Go Back!" class="itembtn" name="unorder" onclick="subtract(5)">
+                     <p></p>
+                  </div>
+               </div>
+
+               <div class="card six">
+                  <div class="image">
+                     <br>
+                     <img id="food6"
+                           src="https://i.ibb.co/yQfGzK8/Untitled-design-5.png"
+                           alt="ChickenAlfredo">
+                  </div>
+                  <div class="title">
+                     <h1>Chicken Alfredo</h1>
+                     <h1><small>₱370.00</small></h1>
+                  </div>
+                  <div class="description">
+                     <button id="food6num" type="button" class="amountbtn">0</button>
+                     <br>
+                     <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order" onclick="add(6)">
+                     <input type="button" value="Go Back!" class="itembtn" name="unorder" onclick="subtract(6)">
+                     <p></p>
+                  </div>
+               </div>
+
+               <br><br><br><br><br><br><br><br>
+
+               <div class="items-header">
+                  <img src="https://lh3.googleusercontent.com/nEqV6J9QDS9qbWFdYXRc-Rm2V15chlLbBuosAFu0PXp5LoOlNLcNp1JUtceqCahG9i7yHy22ft-3vARzCnRObJzFBPVDtJd2yobHIC9SQlYAFgw-QnsgrMkxm6jH1Rj_5ujvlVLcnA=w2400" alt="mens apparel">
+               </div>
+               <br>
+               <div class="card seven">
+                  <div class="image">
+                     <br>
+                     <img id="food7"
+                           src="https://i.ibb.co/QprQbX0/Untitled-design-6.png"
+                           alt="CinnamonRoll">
+                  </div>
+                  <div class="title">
+                     <h1>Cinnamon Roll</h1>
+                     <h1><small>₱125.00</small></h1>
+                  </div>
+                  <div class="description">
+                     <button id="food7num" type="button" class="amountbtn">0</button>
+                     <br>
+                     <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order" onclick="add(7)">
+                     <input type="button" value="Go Back!" class="itembtn" name="unorder" onclick="subtract(7)">
+                     <p></p>
+                  </div>
+               </div>
+
+               <div class="card eight">
+                  <div class="image">
+                     <br>
+                     <img id="food8"
+                           src="https://i.ibb.co/vmt8qpF/Untitled-design-7.png"
+                           alt="MiniTiramisu">
+                  </div>
+                  <div class="title">
+                     <h1>Mini Tiramisu</h1>
+                     <h1><small>₱235.00</small></h1>
+                  </div>
+                  <div class="description">
+                     <button id="food8num" type="button" class="amountbtn">0</button>
+                     <br>
+                     <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order" onclick="add(8)">
+                     <input type="button" value="Go Back!" class="itembtn" name="unorder" onclick="subtract(8)">
+                     <p></p>
+                  </div>
+               </div>
+
+               <div class="card nine">
+                  <div class="image">
+                     <br>
+                     <img id="food9"
+                           src="https://i.ibb.co/4t3Qnz9/Untitled-design-9.png"
+                           alt="ButterCroissant">
+                  </div>
+                  <div class="title">
+                     <h1>Butter Croissant</h1>
+                     <h1><small>₱115.00</small></h1>
+                  </div>
+                  <div class="description">
+                     <button id="food9num" type="button" class="amountbtn">0</button>
+                     <br>
+                     <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order" onclick="add(9)">
+                     <input type="button" value="Go Back!" class="itembtn" name="unorder" onclick="subtract(9)">
+                     <p></p>
+                  </div>
+               </div>
+
+               <br><br><br><br><br><br><br><br>
+               <div class="items-header">
+                  <img src="https://lh3.googleusercontent.com/nEqV6J9QDS9qbWFdYXRc-Rm2V15chlLbBuosAFu0PXp5LoOlNLcNp1JUtceqCahG9i7yHy22ft-3vARzCnRObJzFBPVDtJd2yobHIC9SQlYAFgw-QnsgrMkxm6jH1Rj_5ujvlVLcnA=w2400" alt="mens apparel">
+               </div>
+               <br>
+               
+               <div class="card ten">
+                  <div class="image">
+                     <br>
+                     <img id="food10"
+                           src="https://i.ibb.co/0Yz0CPQ/Untitled-design-12.png"
+                           alt="IcedShakenDragonTea">
+                  </div>
+                  <div class="title">
+                     <h1>Iced Shaken Dragon Tea</h1>
+                     <h1><small>₱195.00</small></h1>
+                  </div>
+                  <div class="description">
+                     <button id="food10num" type="button" class="amountbtn">0</button>
+                     <br>
+                     <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order" onclick="add(10)">
+                     <input type="button" value="Go Back!" class="itembtn" name="unorder" onclick="subtract(10)">
+                     <p></p>
+                  </div>
+               </div>
+
+               <div class="card eleven">
+                  <div class="image">
+                     <br>  
+                     <img id="food11" src="https://i.ibb.co/qp8BdW3/Untitled-design-15.png"
+                        alt="PistachioCreamFrapuccino">
+                  </div>
+                  <div class="title">
+                     <h1>Pistachio Cream Frapuccino</h1>
+                     <h1><small>₱265.00</small></h1>
+                  </div>
+                  <div class="description">
+                     <button id="food11num" type="button" class="amountbtn">0</button>
+                     <br>
+                     <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order" onclick="add(11)">
+                     <input type="button" value="Go Back!" class="itembtn" name="unorder" onclick="subtract(11)">
+                     <p></p>
+                  </div>
+               </div>
+
+               <div class="card twelve">
+                  <div class="image">
+                     <br>
+                     <img id="food12" src="https://i.ibb.co/C6HZX4v/Untitled-design-16.png"
+                        alt="SpanishLatte">
+                  </div>
+                  <div class="title">
+                     <h1>Spanish Latte</h1>
+                     <h1><small>₱225.00</small></h1>
+                  </div>
+                  <div class="description">
+                     <button id="food12num" type="button" class="amountbtn">0</button>
+                     <br>
+                     <input type="button" value="I Choose You!" class="itembtn itembtn1" name="order" onclick="add(12)">
+                     <input type="button" value="Go Back!" class="itembtn" name="unorder" onclick="subtract(12)">
+                     <p></p>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+         <!-- menu section ends -->
+
+         <!-- order section starts -->
+         <div class="row" id="order">
+            <div id="noeffect" class="cart">
+                <br>
+                <h1>Your Cart</h1>
+                <ul id="list" class="cust_ordercart">
+
+                </ul>
+                <ul class="cust_ordertotal">
+                     <li>Total: 
+                        <div id="totalprice" class="cust_orderprice">₱ 0</div>
+                     </li>
+                </ul>
+            </div>
+        </div>
+
+         <div class="flex">
+            <!-- NAME -->
+            <div class="inputBox">
+               <label for="txtcustname">Name:</label>
+               <input type="text" name="cust_name" id="txtcust_name" class="box" required placeholder="Format: Last Name, Given Name M.I." maxlength="747">
+            </div>
+
+            <!-- ADDRESS -->
+            <div class="inputBox">
+               <label for="txtdeliveryaddr">Address:</label>
+               <input type="text" name="cust_addr" id="txtcust_addr" class="box" required placeholder="Format: House/Building no., Street, Village, City, Province">
+            </div>
+
+            <!-- CELLPHONE NUMBER-->
+            <div class="inputBox">
+               <label for="txtcpnumber">Cellphone Number:</label>
+               <input type="number" name="cpnumber" id="txtcpnumber" class="box" required placeholder="Format: 09123456789">
+            </div>
+
+            <!-- EMAIL -->
+            <div class="inputBox">
+               <label for="txtdeliveryaddr">Email:</label>
+               <input type="text" name="cust_email" id="txtcust_email" class="box" required placeholder="For Example: celagio2026@clc.pshs.edu.ph">
+            </div>
+
+         </div>
+      </div>
+
+      <!-- order section ends -->
+
+      <!-- RESTAURANT NAME -->
+      <input type="hidden" id="txtrestoname" name="restoname" value="DevourPuff">
+
+      <input type="submit" value="order now" class="btn" name="order">
+
+      <input class="form-control" type="hidden" id="cust_order" name="cust_order">
+
+   </form>
+
+</section>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <i class="fas fa-phone"></i>
+         <h3>phone number</h3>
+         <p>+63-969-609-8887</p>
+         <p>+63-961-296-1888</p>
+         <p>+63-927-864-7372</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-map-marker-alt"></i>
+         <h3>Our Address</h3>
+         <p>Railway HWY, Blossom Street, Blossom Province, besides Buttercup and accross Predator</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-clock"></i>
+         <h3>opening hours</h3>
+         <p>Weekdays: 9 AM - 10 PM</p>
+         <p>Weekends: 8 AM - 9 PM</p>
+         <br><br>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-envelope"></i>
+         <h3>email address</h3>
+         <p>celagio2026@clc.pshs.edu.ph</p>
+         <p>jocampo2026@clc.pshs.edu.ph</p>
+         <p>cdizon2026@clc.pshs.edu.ph</p>
+      </div>
+
+   </div>
+
+   <div class="credit">
+      &copy; copyright @ 2023 by Group 8 | all rights reserved
+   </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<!-- js file link  -->
+<script src="script.js"></script>
+
+</body>
+</html>
